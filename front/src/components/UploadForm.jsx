@@ -22,7 +22,7 @@ function UploadForm() {
         });
 
         try {
-            const res = await axios.post('http://localhost:5000/api/process', formData, {
+            const res = await axios.post('https://gpt-web-app.onrender.com/api/process', formData, {
                 headers: { 'Content-Type': 'multipart/form-data' },
             });
             setResponse(res.data); // Set the response from the server

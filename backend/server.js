@@ -70,7 +70,7 @@ app.post('/api/process', upload.array('images'), async (req, res) => {
             const imageUrls = images.map(file => ({
                 type: "image_url",
                 image_url: {
-                    url: `http://localhost:${port}/uploads/${file.filename}` // Public URL for the image
+                    url: `https://gpt-web-app.onrender.com/uploads/${file.filename}` // Public URL for the image
                 }
             }));
 
