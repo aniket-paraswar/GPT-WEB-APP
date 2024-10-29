@@ -32,7 +32,7 @@ async function sendToChatGPT(messages) {
 
     try {
         const response = await axios.post(apiUrl, {
-            model: "gpt-4o-mini", // Specify the model
+            model: "gpt-4o", // Specify the model
             messages, // Send the messages array directly
         }, {
             headers: {
